@@ -1,4 +1,5 @@
-let incrementOrSetFrequency = (frequencies: Js.Dict.t(int), letter: string) => {
+let incrementOrSetFrequency =
+    (frequencies: Js.Dict.t(int), letter: string): Js.Dict.t(int) => {
   switch (Js.Dict.get(frequencies, letter)) {
   | Some(x) =>
     Js.Dict.set(frequencies, letter, x + 1);
